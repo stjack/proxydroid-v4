@@ -64,6 +64,7 @@
  */
 
 #include <sys/epoll.h>
+#include "ev.h"
 
 #define EV_EMASK_EPERM 0x80
 
