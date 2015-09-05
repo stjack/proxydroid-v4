@@ -1,0 +1,99 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* java/
+* java/com/
+* java/com/btr/
+* java/com/btr/proxy/
+* java/com/btr/proxy/selector/
+* java/com/btr/proxy/selector/pac/
+* java/com/btr/proxy/selector/pac/PacProxySelector.java
+* java/com/btr/proxy/selector/pac/PacScriptMethods.java
+* java/com/btr/proxy/selector/pac/PacScriptParser.java
+* java/com/btr/proxy/selector/pac/PacScriptSource.java
+* java/com/btr/proxy/selector/pac/Proxy.java
+* java/com/btr/proxy/selector/pac/ProxyEvaluationException.java
+* java/com/btr/proxy/selector/pac/ProxyException.java
+* java/com/btr/proxy/selector/pac/RhinoPacScriptParser.java
+* java/com/btr/proxy/selector/pac/ScriptMethods.java
+* java/com/btr/proxy/selector/pac/UrlPacScriptSource.java
+* java/com/github/
+* java/com/github/droidfu/
+* java/com/github/droidfu/http/
+* java/com/github/droidfu/http/BetterHttp.java
+* java/com/github/droidfu/http/BetterHttpRequest.java
+* java/com/github/droidfu/http/BetterHttpRequestBase.java
+* java/com/github/droidfu/http/BetterHttpRequestRetryHandler.java
+* java/com/github/droidfu/http/BetterHttpResponse.java
+* java/com/github/droidfu/http/BetterHttpResponseImpl.java
+* java/com/github/droidfu/http/HttpDelete.java
+* java/com/github/droidfu/http/HttpGet.java
+* java/com/github/droidfu/http/HttpPost.java
+* java/com/github/droidfu/http/HttpPut.java
+* java/com/github/droidfu/http/ssl/
+* java/com/github/droidfu/http/ssl/EasySSLSocketFactory.java
+* java/com/github/droidfu/http/ssl/TrivialTrustManager.java
+* java/com/ksmaze/
+* java/com/ksmaze/android/
+* java/com/ksmaze/android/preference/
+* java/com/ksmaze/android/preference/ListPreferenceMultiSelect.java
+* java/org/
+* java/org/proxydroid/
+* java/org/proxydroid/AppManager.java
+* java/org/proxydroid/BypassListActivity.java
+* java/org/proxydroid/ConnectivityBroadcastReceiver.java
+* java/org/proxydroid/DNSProxy.java
+* java/org/proxydroid/DomainValidator.java
+* java/org/proxydroid/Exec.java
+* java/org/proxydroid/FileArrayAdapter.java
+* java/org/proxydroid/FileChooser.java
+* java/org/proxydroid/InnerSocketBuilder.java
+* java/org/proxydroid/Profile.java
+* java/org/proxydroid/ProxyDroid.java
+* java/org/proxydroid/ProxyDroidReceiver.java
+* java/org/proxydroid/ProxyDroidService.java
+* java/org/proxydroid/ProxyDroidWidgetProvider.java
+* java/org/proxydroid/ProxyedApp.java
+* java/org/proxydroid/db/
+* java/org/proxydroid/db/DNSResponse.java
+* java/org/proxydroid/db/DatabaseHelper.java
+* java/org/proxydroid/utils/
+* java/org/proxydroid/utils/Base64.java
+* java/org/proxydroid/utils/Constraints.java
+* java/org/proxydroid/utils/ImageLoader.java
+* java/org/proxydroid/utils/ImageLoaderFactory.java
+* java/org/proxydroid/utils/Option.java
+* java/org/proxydroid/utils/RegexValidator.java
+* java/org/proxydroid/utils/Utils.java
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app/src/main/AndroidManifest.xml
+* assets/ => app/src/main/assets/
+* jni/ => app/src/main/jni/
+* libs/armeabi/libexec.so => app/src/main/jniLibs/armeabi/libexec.so
+* res/ => app/src/main/res/
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)
