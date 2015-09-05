@@ -3,7 +3,6 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 21
     buildToolsVersion "23.0.0"
-
     defaultConfig {
         applicationId "org.proxydroid"
         minSdkVersion 9
@@ -20,4 +19,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+}
+
+dependencies {
+
+    compile "com.android.support:support-v7:21.0.+"
 }
