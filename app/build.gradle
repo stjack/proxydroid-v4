@@ -1,23 +1,29 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.model.application'
+model {
+    android {
+        compileSdkVersion = 23
+        buildToolsVersion = "23.0.0"
+        defaultConfig.with {
+            applicationId = "org.proxydroid"
+            minSdkVersion.apiLevel = 15
+            targetSdkVersion.apiLevel = 22
 
-android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.0"
-    defaultConfig {
-        applicationId "org.proxydroid"
-        minSdkVersion 9
-        targetSdkVersion 17
-
-        ndk {
-            moduleName "redsocks"
         }
     }
 
-    buildTypes {
+    android.buildTypes {
         release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            minifyEnabled = false
+            proguardFiles += file('proguard-rules.pro')
         }
+    }
+
+    android.ndk {
+        moduleName = "redsocks"
+        CFlags += "-std=gnu99".toString()
+        cppFlags += "-I${file("src/main/jni/redsocks")}".toString()
+        cppFlags += "-I${file("src/main/jni/libevent/include")}".toString()
+        cppFlags += "-I${file("src/main/jni/libevent")}".toString()
     }
 }
 
