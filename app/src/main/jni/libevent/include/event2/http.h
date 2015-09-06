@@ -28,7 +28,7 @@
 #define _EVENT2_HTTP_H_
 
 /* For int types. */
-#include <event2/util.h>
+#include "util.h"
 
 #ifdef __cplusplus
 extern "C" {

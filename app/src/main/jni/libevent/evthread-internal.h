@@ -30,8 +30,8 @@
 extern "C" {
 #endif
 
-#include "event2/thread.h"
-#include "event2/event-config.h"
+#include "include/event2/thread.h"
+#include "include/event2/event-config.h"
 #include "util-internal.h"
 
 struct event_base;
