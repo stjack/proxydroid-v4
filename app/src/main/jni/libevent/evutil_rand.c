@@ -32,7 +32,7 @@
  * so that other people can rip it out and use it for whatever.
  */
 
-#include "event2/event-config.h"
+#include "include/event2/event-config.h"
 
 #include <limits.h>
 

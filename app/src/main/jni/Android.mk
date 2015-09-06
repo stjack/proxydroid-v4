@@ -30,7 +30,7 @@ LIBEVENT_SOURCES := \
 	listener.c log.c poll.c \
 	select.c signal.c strlcpy.c
 
-LOCAL_MODULE := event
+LOCAL_MODULE := libevent
 LOCAL_SRC_FILES := $(addprefix libevent/, $(LIBEVENT_SOURCES))
 LOCAL_CFLAGS := -O2 -g -I$(LOCAL_PATH)/libevent \
 	-I$(LOCAL_PATH)/libevent/include
@@ -57,35 +57,13 @@ include $(BUILD_EXECUTABLE)
 include $(CLEAR_VARS)
 
 
-LOCAL_STATIC_LIBRARIES := libevent
-
-
-include $(BUILD_STATIC_LIBRARY)
-
-include $(CLEAR_VARS)
 
 
 LOCAL_LDLIBS := -lz
 
-include $(BUILD_EXECUTABLE)
-
-include $(CLEAR_VARS)
-
-LOCAL_MODULE := libev
-LOCAL_CFLAGS += -O2 -DNDEBUG -DHAVE_CONFIG_H
-LOCAL_SRC_FILES := \
-	libev/ev.c \
-	libev/event.c 
-
-include $(BUILD_STATIC_LIBRARY)
-
-include $(CLEAR_VARS)
 
 LOCAL_LDLIBS := -llog
 
-include $(BUILD_EXECUTABLE)
-
-include $(CLEAR_VARS)
 
 LOCAL_MODULE:= exec
 
@@ -96,10 +74,4 @@ LOCAL_LDLIBS := -ldl -llog
 
 include $(BUILD_SHARED_LIBRARY)
 
-subdirs := $(addprefix $(addsuffix /Android.mk, \
-	crypto \
-	ssl \
-	))
-
-include $(subdirs)
 

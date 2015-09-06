@@ -9,7 +9,7 @@ android {
         targetSdkVersion 16
 
         ndk {
-            moduleName "event"
+            moduleName "libevent"
         }
     }
 

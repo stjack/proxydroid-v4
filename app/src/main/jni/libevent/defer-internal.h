@@ -30,7 +30,7 @@
 extern "C" {
 #endif
 
-#include "event2/event-config.h"
+#include "include/event2/event-config.h"
 #include <sys/queue.h>
 
 struct deferred_cb;

@@ -28,10 +28,10 @@
 #ifndef _MIN_HEAP_H_
 #define _MIN_HEAP_H_
 
-#include "event2/event-config.h"
-#include "event2/event.h"
-#include "event2/event_struct.h"
-#include "event2/util.h"
+#include "include/event2/event-config.h"
+#include "include/event2/event.h"
+#include "include/event2/event_struct.h"
+#include "include/event2/util.h"
 #include "util-internal.h"
 #include "mm-internal.h"
 
