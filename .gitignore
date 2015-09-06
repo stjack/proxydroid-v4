@@ -3,3 +3,4 @@ build/*
 */build/*
 .gradle/*
 *.iml
+app/src/main/obj/*
